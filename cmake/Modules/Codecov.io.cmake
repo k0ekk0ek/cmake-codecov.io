@@ -24,7 +24,7 @@ if(ENABLE_COVERAGE)
   endif()
   if(NOT TARGET codecov)
     set(CODECOV_FILE codecov.dump)
-    set(CODECOV_ARCHIVE ${CODECOV_FILE}.tgz)
+    set(CODECOV_ARCHIVE codecov.tar.gz)
     add_custom_target(codecov)
     add_dependencies(codecov gcov)
     add_custom_command(
